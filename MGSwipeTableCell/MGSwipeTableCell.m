@@ -525,17 +525,17 @@ static inline CGFloat mgEaseInOutBounce(CGFloat t, CGFloat b, CGFloat c) {
     }
     CGFloat (*easingFunction)(CGFloat t, CGFloat b, CGFloat c) = 0;
     switch (_easingFunction) {
-        case MGSwipeEasingFunctionLinear: easingFunction = mgEaseLinear;break;
-        case MGSwipeEasingFunctionQuadIn: easingFunction = mgEaseInQuad;break;
-        case MGSwipeEasingFunctionQuadOut: easingFunction = mgEaseOutQuad;break;
-        case MGSwipeEasingFunctionQuadInOut: easingFunction = mgEaseInOutQuad;break;
-        case MGSwipeEasingFunctionCubicIn: easingFunction = mgEaseInCubic;break;
+        case MGSwipeEasingFunctionLinear: easingFunction = mgEaseLinear; break;
+        case MGSwipeEasingFunctionQuadIn: easingFunction = mgEaseInQuad; break;
+        case MGSwipeEasingFunctionQuadOut: easingFunction = mgEaseOutQuad; break;
+        case MGSwipeEasingFunctionQuadInOut: easingFunction = mgEaseInOutQuad; break;
+        case MGSwipeEasingFunctionCubicIn: easingFunction = mgEaseInCubic; break;
         default:
-        case MGSwipeEasingFunctionCubicOut: easingFunction = mgEaseOutCubic;break;
-        case MGSwipeEasingFunctionCubicInOut: easingFunction = mgEaseInOutCubic;break;
-        case MGSwipeEasingFunctionBounceIn: easingFunction = mgEaseInBounce;break;
-        case MGSwipeEasingFunctionBounceOut: easingFunction = mgEaseOutBounce;break;
-        case MGSwipeEasingFunctionBounceInOut: easingFunction = mgEaseInOutBounce;break;
+        case MGSwipeEasingFunctionCubicOut: easingFunction = mgEaseOutCubic; break;
+        case MGSwipeEasingFunctionCubicInOut: easingFunction = mgEaseInOutCubic; break;
+        case MGSwipeEasingFunctionBounceIn: easingFunction = mgEaseInBounce; break;
+        case MGSwipeEasingFunctionBounceOut: easingFunction = mgEaseOutBounce; break;
+        case MGSwipeEasingFunctionBounceInOut: easingFunction = mgEaseInOutBounce; break;
     }
     return (*easingFunction)(t, from, to - from);
 }

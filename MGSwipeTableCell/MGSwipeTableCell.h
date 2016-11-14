@@ -204,6 +204,11 @@ typedef NS_ENUM(NSInteger, MGSwipeEasingFunction) {
  **/
 -(void) swipeTableCellWillEndSwiping:(nonnull MGSwipeTableCell *) cell;
 
+/**
+ * Cell is shown
+ **/
+-(void) swipeTableCellIsShown:(MGSwipeTableCell *) cell;
+
 @end
 
 

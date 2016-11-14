@@ -976,11 +976,17 @@ static inline CGFloat mgEaseInOutBounce(CGFloat t, CGFloat b, CGFloat c) {
     MGSwipeButtonsView * activeButtons = sign < 0 ? _rightView : _leftView;
     MGSwipeSettings * activeSettings = sign < 0 ? _rightSwipeSettings : _leftSwipeSettings;
   
+    CGFloat maxOffset = sign * activeButtons.bounds.size.width;
+    if (newOffset && newOffset == maxOffset) {
+      if (_delegate && [_delegate respondsToSelector:@selector(swipeTableCellIsShown:)]) {
+        [_delegate swipeTableCellIsShown:self];
+      }
+    }
+  
     if(activeSettings.enableSwipeBounces) {
         _swipeOffset = newOffset;
     }
     else {
-        CGFloat maxOffset = sign * activeButtons.bounds.size.width;
         _swipeOffset = sign > 0 ? MIN(newOffset, maxOffset) : MAX(newOffset, maxOffset);
     }
     CGFloat offset = fabs(_swipeOffset);

@@ -48,27 +48,27 @@ typedef BOOL(^ MGSwipeButtonCallback)(MGSwipeTableCell * _Nonnull cell);
                                   insets: (UIEdgeInsets) insets
                                 callback: (nullable MGSwipeButtonCallback) callback;
 + (nonnull instancetype) buttonWithTitle: (nonnull NSString *) title
-                                    icon: (nullable UIImage*) icon
+                                    icon: (nullable UIImage *) icon
                          backgroundColor: (nullable UIColor *) color;
 + (nonnull instancetype) buttonWithTitle: (nonnull NSString *) title
-                                    icon: (nullable UIImage*) icon
+                                    icon: (nullable UIImage *) icon
                          backgroundColor: (nullable UIColor *) color
                                  padding: (NSInteger) padding;
 + (nonnull instancetype) buttonWithTitle: (nonnull NSString *) title
-                                    icon: (nullable UIImage*) icon
+                                    icon: (nullable UIImage *) icon
                          backgroundColor: (nullable UIColor *) color
                                   insets: (UIEdgeInsets) insets;
 + (nonnull instancetype) buttonWithTitle: (nonnull NSString *) title
-                                    icon: (nullable UIImage*) icon
+                                    icon: (nullable UIImage *) icon
                          backgroundColor: (nullable UIColor *) color
                                 callback: (nullable MGSwipeButtonCallback) callback;
 + (nonnull instancetype) buttonWithTitle: (nonnull NSString *) title
-                                    icon: (nullable UIImage*) icon
+                                    icon: (nullable UIImage *) icon
                          backgroundColor: (nullable UIColor *) color
                                  padding: (NSInteger) padding
                                 callback: (nullable MGSwipeButtonCallback) callback;
 + (nonnull instancetype) buttonWithTitle: (nonnull NSString *) title
-                                    icon: (nullable UIImage*) icon
+                                    icon: (nullable UIImage *) icon
                          backgroundColor: (nullable UIColor *) color
                                   insets: (UIEdgeInsets) insets
                                 callback: (nullable MGSwipeButtonCallback) callback;
